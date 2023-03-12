@@ -83,9 +83,9 @@ function Info() {
             </div>
 
           </div>
-          <div>
+          {meanings[1] && <div>
             <div className="flex items-center mt-10">
-              <p className="font-bold text-2xl italic">{meanings[1].partOfSpeech ? meanings[1].partOfSpeech : none}</p>
+              <p className="font-bold text-2xl italic">{meanings[1].partOfSpeech ? meanings[1].partOfSpeech : 'none'}</p>
               <div className="w-full h-[1px] bg-[#E9E9E9] ml-5"></div>
             </div>
             <div className="mt-10">
@@ -104,7 +104,7 @@ function Info() {
 
             </div>
 
-          </div>
+          </div>}
           <div className="border-t-[#E9E9E9] border-t-[1px] mt-10 flex">
             <a className="mt-[19px] flex underline font-normal text-sm	decoration-[#757575]" href={sourceUrls[0]} ><span className="text-[#757575] mr-5">Sourse</span>{sourceUrls[0]}<img className="ml-2" src={linkIcon} alt="" /></a>
           </div>
