@@ -1,7 +1,6 @@
-import React, { useEffect } from "react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
-function useRequest(url = "https://api.dictionaryapi.dev/api/v2/entries/en/keyboard") {
+function useRequest(url = "https://api.dictionaryapi.dev/api/v2/entries/en/hi") {
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
